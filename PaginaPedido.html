@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario de Pedido</title>
+  <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Formulario de Pedido</h1>
+    <form>
+      <!-- Nombre -->
+      <label for="nombre">Nombre del cliente *</label>
+      <input type="text" id="nombre" name="nombre" maxlength="30" required>
+
+      <!-- Correo -->
+      <label for="correo">Correo electrónico *</label>
+      <input type="email" id="correo" name="correo" maxlength="50" required>
+
+      <!-- Dirección -->
+      <label for="direccion">Dirección de envío *</label>
+      <input type="text" id="direccion" name="direccion" maxlength="100" required>
+
+      <!-- Platos -->
+      <label for="plato">Selecciona un plato *</label>
+      <select id="plato" name="plato" required>
+        <option value="">-- Selecciona --</option>
+        <option>Pasta Rellena</option>
+        <option>Salumi</option>
+        <option>Sandwichis</option>
+        <option>Spinaci</option>
+        <option>Brownie</option>
+      </select>
+
+      <!-- Fecha -->
+      <label for="fecha">Fecha de envío *</label>
+      <input type="date" id="fecha" name="fecha" required>
+
+      <!-- Comentarios -->
+      <label for="comentarios">Características especiales</label>
+      <textarea id="comentarios" name="comentarios" rows="4" placeholder="Opcional"></textarea>
+
+      <!-- Botón -->
+      <button type="submit">Enviar Pedido</button>
+      <a href="/PaginaInicio.html" class="volver">← Volver a la página principal</a>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Restaurante Massamilia. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
